@@ -542,6 +542,28 @@ h2 {
 
 }
 
+
+.liveTxt img{
+    height: 20px;
+}
+
+.projectcard:hover img{
+    transition: 1.5S;
+}
+
+.projectcard{
+    overflow: hidden;
+}
+.projectcard:hover img{
+transform: scale(1.08);
+
+border-radius: 10px;
+
+}
+
+
+
+
 .projectGallerySection {
     padding: 50px 0px 0px;
 }
