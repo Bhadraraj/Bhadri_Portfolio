@@ -10,12 +10,21 @@
 
 
 :root {
-    --primary-color: #ff01b3;
+    /* --primary-color: #F93007; */
+    --primary-color: #ff690c;
+    /* --secondary-color: #DBAFA0; */
+    --secondary-color: #020100;
+    --teritary-color: #8290AB;
+    --white-color: #FFFFFF;
+    --primary-bg: #F9F8FE;
+    --secondary-bg: #FFFAFE;
+
+    /* --primary-color: #ff01b3;
     --secondary-color: #DBAFA0;
     --teritary-color: #BB8493;
     --white-color: #FFFFFF;
     --primary-bg: #49243E;
-    --secondary-bg: #FFFAFE;
+    --secondary-bg: #FFFAFE; */
     --font-size-14: 14px;
     --font-size-16: 16px;
     --font-size-18: 18px;
@@ -24,7 +33,7 @@
 
 }
 
-h1 {    
+h1 {
     font-size: 60px;
     font-family: 'Playfair Display', serif !important;
     font-weight: 900 !important;
@@ -50,10 +59,16 @@ h3 {
 /* --------------------------------------- NAV SECTION STARTS HERE ----------------------------------------- */
 
 .navbar a {
-    color: var(--primary-bg);
-    font-weight: 500;
+    color: var(--primary-color);
+    font-weight: 600;
     text-decoration: none;
 
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 .navbar li {
@@ -102,7 +117,8 @@ h3 {
     justify-content: space-between;
     align-items: center;
     /* padding: 10px 20px; */
-    background-color: var(--secondary-color);
+    background-color: var(--primary-bg);
+    box-shadow: 0.3px 0.3px 5px var(--teritary-color);
 }
 
 .nav-left {
@@ -279,20 +295,22 @@ input:checked+.slider:before {
 
 .bannerSection1 {
     padding: 100px 0px 50px;
-    background-color: var(--primary-bg);
+    /* background-color: var(--primary-bg); */
     color: var(--secondary-color);
 
 }
 
 .bannerSection1 p {
-    color: var(--white-color);
+    color: var(--teritary-color);
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .downloadResume {
     padding: 15px;
     font-weight: 700;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--white-color);
+    background-color: var(--primary-color);
     border-radius: 100px;
     border: none;
 }
@@ -302,8 +320,8 @@ input:checked+.slider:before {
 .linkedIn {
     width: 50px;
     height: 50px;
-    background-color: var(--secondary-bg);
-    color: var(--primary-color);
+    /* background-color: var(--secondary-bg); */
+    color: var(--secondary-color);
     font-size: 30px;
     border-radius: 50%;
     border: none;
@@ -322,6 +340,11 @@ input:checked+.slider:before {
 
 .aboutUsSection {
     padding: 50px 0px 50px;
+    background-color: var(--primary-bg);
+}
+
+h2 {
+    text-transform: capitalize !important;
 }
 
 .aboutUsSection h1,
@@ -332,7 +355,8 @@ h2 {
 }
 
 .highlightText {
-    color: var(--teritary-color);
+    color: var(--secondary-color);
+    font-weight: 500;
 }
 
 .highlightHeading {
@@ -341,7 +365,7 @@ h2 {
 
 .aboutUsSection p {
     font-size: 20px;
-    color: var(--primary-color);
+    color: var(--teritary-color);
 }
 
 
@@ -354,7 +378,7 @@ h2 {
 
 .learningTrack {
     padding: 50px 0px 50px;
-    background-color: var(--primary-bg);
+    /* background-color: var(--primary-bg); */
     color: var(--secondary-color);
 
 }
@@ -371,10 +395,35 @@ h2 {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
     /* background-color: var(--bs-nav-tabs-link-active-bg); */
-    background-color: var(--teritary-color) !important;
+    /* background-color: var(--teritary-color) !important; */
+    /* background-color: var(--primary-bg) !important; */
+    box-shadow: inset 0.5px 0.5px 10px var(--teritary-color);
     border: none;
+}
+
+.nav-link {
+
+    font-weight: 600;
+    color: var(--secondary-bg);
+    text-decoration: none;
+
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+
+
+
+
+.nav-tabs {
+
+    background: var(--primary-color);
+    /* color: var(--white-color) !important; */
+    border-radius: 100px;
+    width: fit-content;
 }
 
 
@@ -385,15 +434,6 @@ h2 {
 }
 
 
-.nav-link {
-
-    font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-}
 
 .nav-link:focus,
 .nav-link:hover {
@@ -402,13 +442,6 @@ h2 {
 
 .nav-tabs .nav-link {
     margin-bottom: 0
-}
-
-.nav-tabs {
-
-    background: var(--secondary-color);
-    border-radius: 100px;
-    width: fit-content;
 }
 
 
@@ -428,7 +461,7 @@ h2 {
 .bartrackConnect {
     height: 1.5px;
     width: 25px;
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary-color);
 
 }
 
@@ -442,8 +475,14 @@ h2 {
     border: none;
     padding: 15px;
     border-radius: 25px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    box-shadow: 0.3px 0.2px 5px var(--teritary-color);
+}
+
+.trackCard p {
+    color: var(--teritary-color);
+    font-weight: 500;
 }
 
 /* -----------------------------------LEARNING AND CAREER TRACK ENDS HERE ------------------------------- */
@@ -466,12 +505,12 @@ h2 {
 
 .skill-name {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--se);
 }
 
 .skill-bar {
     width: 100%;
-    background-color: var(--teritary-color);
+    background-color: var(--primary-bg);
     height: 20px;
     border-radius: 50PX;
     position: relative;
@@ -479,7 +518,7 @@ h2 {
 }
 
 .skill-level {
-    background-color: var(--primary-color);
+    background-color: var(--teritary-color);
     height: 100%;
     border-radius: 50PX;
     position: absolute;
@@ -494,7 +533,7 @@ h2 {
 }
 
 .professionalSkills h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 @keyframes fillWidth {
@@ -512,12 +551,17 @@ h2 {
 /* -----------------------------------PROJECT GALLERY START HERE ------------------------------- */
 
 .projectGallerySection h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.subHeading {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .projectTitle {
     font-size: var(--font-size-20);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -543,29 +587,29 @@ h2 {
 }
 
 
-.liveTxt img{
+.liveTxt img {
     height: 20px;
 }
 
-.projectcard:hover img{
+.projectcard:hover img {
     transition: 1.5S;
+    transform: scale(1.08);
+    border-radius: 10px;
+
 }
 
-.projectcard{
+.projectcard {
+    border-radius: 10px;
     overflow: hidden;
-}
-.projectcard:hover img{
-transform: scale(1.08);
-
-border-radius: 10px;
-
+    box-shadow: 0.3px 0.3px 10px var(--teritary-color);
 }
 
 
 
 
 .projectGallerySection {
-    padding: 50px 0px 0px;
+    background-color: var(--primary-bg);
+    padding: 50px 0px 50px;
 }
 
 /* -----------------------------------PROJECT GALLERY END HERE ------------------------------- */
@@ -595,12 +639,33 @@ input::placeholder {
 }
 
 footer h2 {
-    color: var(--primary-bg);
+    color: var(--secondary-color);
 }
 
+
+.social-links a{
+    color: var(--secondary-color) !important;
+}
 footer {
-    padding: 50px 0px 25px;
-    background-color: var(--teritary-color);
+    padding: 50px 0px 10px;
+    background-color: var(--primary-bg);
+}
+
+.footerBase a {
+    color: var(--primary-bg);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.contact-details li {
+    padding: 10px 0px;
+    /* font-weight: 600; */
+}
+
+
+.contact-details {
+    padding: 0px;
 }
 
 textarea {
@@ -636,6 +701,7 @@ input:focus-visible {
 
     box-shadow: none;
 }
+
 
 
 .sendMsg {
@@ -733,7 +799,7 @@ input:focus-visible {
 }
 
 .projectContent {
-    background-color: bisque;
+    background-color: var(--white-color);
     border-radius: 0px 0px 10px 10px;
     padding: 15px;
 }
@@ -741,6 +807,7 @@ input:focus-visible {
 .projectOuterCard {
     padding: 10px;
     border-radius: 10px;
+    /* box-shadow: 2px 2px ; */
 }
 
 
@@ -752,13 +819,29 @@ input:focus-visible {
 /* TESTIMONIAL */
 
 .testimonial h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
 
 .testimonial {
     padding: 50px 0px 0px 0px;
+}
+
+.connectMeLeftSec li {
+    list-style-type: none;
+
+}
+.connectMeLeftSec ul{
+padding-left: 0px;
+
+}
+
+.connectMeLeftSec li a {
+    color: var(--primary-bg);
+    text-decoration: none;
+    font-weight: 500;
+
 }
 
 

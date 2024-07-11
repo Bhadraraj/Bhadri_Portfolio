@@ -4,7 +4,7 @@
 
     /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap'); */
 
-    :root {
+    /* :root {
         --primary-color: #49243E;
         --secondary-color: #DBAFA0;
         --teritary-color: #BB8493;
@@ -16,7 +16,7 @@
         --font-size-18: 18px;
         --font-size-20: 20px;
         --font-size-24: 24px;
-    }
+    } */
 
     .swiper-container {
         width: 95%;
@@ -113,15 +113,15 @@
     }
 
     .testimonialUserDesign {
-        color: var(--teritary-color);
+        color: var(--secondary-color);
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .textimonialCont {
         font-size: 15px;
         text-align: justify;
-        color: var(--primary-color);
+        color: var(--secondary-color);
     }
 
     .testimonialUserImg {
