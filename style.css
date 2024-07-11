@@ -10,7 +10,7 @@
 
 
 :root {
-    --primary-color: #49243E;
+    --primary-color: #ff01b3;
     --secondary-color: #DBAFA0;
     --teritary-color: #BB8493;
     --white-color: #FFFFFF;
@@ -24,7 +24,7 @@
 
 }
 
-h1 {
+h1 {    
     font-size: 60px;
     font-family: 'Playfair Display', serif !important;
     font-weight: 900 !important;
