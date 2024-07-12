@@ -7,7 +7,7 @@
     /* :root {
         --primary-color: #49243E;
         --secondary-color: #DBAFA0;
-        --teritary-color: #BB8493;
+        --fadedBlack-color: #BB8493;
         --white-color: #FFFFFF;
         --primary-bg: #49243E;
         --secondary-bg: #FFFAFE;
@@ -54,11 +54,11 @@
     }
 
     .responsive-container-block.content {
-        border: 1px solid var(--teritary-color);
+        /* border: 1px solid var(--fadedBlack-color); */
         padding: 25px;
         border-radius: 50px 20px;
         position: relative;
-        box-shadow: 1px 1px 8px var(--teritary-color);
+        box-shadow: 0.5px 0.5px 5px var(--darkPink-color);
     }
 
 
@@ -133,7 +133,7 @@
     .swiper-pagination-bullet {
 
         border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-        background: var(--teritary-color);
+        background: var(--fadedBlack-color);
         opacity: 0.6;
     }
 
