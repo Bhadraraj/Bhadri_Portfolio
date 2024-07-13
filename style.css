@@ -24,6 +24,10 @@
     --darkPink-color: #ff44ac;
     --fadedBlack-color: #8290AB;
     /* --fadedBlack-color: #d4edff; */
+
+    /* skillbagde
+     */
+    --lavender-color:#7a77d6;
     --lightBlue-color: #d4edff;
     --darkBlue-color: #d4edff;
     --fade-color: #dfdff0;
@@ -47,16 +51,18 @@
 
 }
 
-h1 {
+h1,h2, h4,h5,h6 {
     font-size: 60px;
-    font-family: 'Playfair Display', serif !important;
+    /* font-family: 'Playfair Display', serif !important; */
+    font-family: "Yatra One", system-ui !important;
+    color: var(--primary-color) !important;
     font-weight: 900 !important;
 }
 
 h2 {
     font-size: 54px;
 
-    font-family: 'Playfair Display', serif !important;
+    /* font-family: 'Playfair Display', serif !important; */
     font-weight: 900 !important;
 
 }
@@ -311,6 +317,9 @@ input:checked+.slider:before {
     padding: 100px 0px 50px;
     /* background-color: var(--primary-bg); */
     color: var(--black-color);
+    background-image: url(./svg2.svg);
+    background-repeat: no-repeat; 
+    background-position: top left;
 
 }
 
@@ -340,6 +349,18 @@ input:checked+.slider:before {
     font-size: 30px;
     border-radius: 50%;
     border: none;
+}
+.whatsapp img,
+.gitBtn img,
+.linkedIn img{
+    width: 40px;
+    height: 40px;
+    padding: ;
+    /* background-color: var(--secondary-bg); */
+    /* color: var(--black-color);
+    font-size: 30px;
+    border-radius: 50%;
+    border: none; */
 }
 
 .introSec {
@@ -565,7 +586,7 @@ h2 {
 
 .skill-name {
     font-weight: bold;
-    color: var(--se);
+    color: var(--primary-color);
 }
 
 .skill-bar {
@@ -575,10 +596,12 @@ h2 {
     border-radius: 50PX;
     position: relative;
     overflow: hidden;
+    border: 0.5px solid var(--lavender-color);
 }
 
 .skill-level {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: var(--lavender-color);
     height: 100%;
     border-radius: 50PX;
     position: absolute;
@@ -704,7 +727,9 @@ textarea::placeholder {
 input::placeholder {
     color: #49243E;
 }
-
+h1{
+    
+}
 footer h2 {
     color: var(--black-color);
 }
@@ -805,6 +830,23 @@ input:focus-visible {
     padding: 10px;
 }
 
+.introSecRight{
+    /* background-image: url(svg1.svg); */
+    /* background-image: url(svg4.svg); */
+    /* background-image: url(svg1.svg); */
+    border-radius: 50px;
+    /* background-color: var(--darkBlue-color); */
+    /* background-image: url(svg6.svg);  */
+    /* background-image: url(svg2.svg);  */
+    /* background-image: url(svg8.svg);  */
+    /* background-image: url(svg8.svg); 
+    background-image: url(svg8.svg);  */
+    background-repeat: no-repeat;
+    /* background-position: top right; */
+    background-size: cover;
+    /* border: 2px solid red; */
+             
+}
 .aboutUsRight,
 .introSecleft,
 .careerLeftSec,
