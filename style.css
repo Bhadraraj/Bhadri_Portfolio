@@ -27,7 +27,7 @@
 
     /* skillbagde
      */
-    --lavender-color: #7a77d6;
+    --lavender-color:#7a77d6;
     --lightBlue-color: #d4edff;
     --darkBlue-color: #d4edff;
     --fade-color: #dfdff0;
@@ -51,11 +51,7 @@
 
 }
 
-h1,
-h2,
-h4,
-h5,
-h6 {
+h1,h2, h4,h5,h6 {
     font-size: 60px;
     /* font-family: 'Playfair Display', serif !important; */
     font-family: "Yatra One", system-ui !important;
@@ -107,15 +103,10 @@ h3 {
     margin-right: 20px;
     border-radius: 20px;
     font-weight: 500;
-
-    background-color: var(--lavender-color);
-    color: white !important;
+    background-color: var(--primary-bg);
 
 }
 
-.hireMe a {
-    color: white;
-}
 
 .navbar-toggler:focus {
     text-decoration: none;
@@ -127,19 +118,7 @@ h3 {
 
 .hireMe a,
 .hireMeinsideNav a {
-    /* color: var(--black-color); */
-}
-
-h1 {
-    /* font-size: 72px; */
-    background: -webkit-linear-gradient(var(--lavender-color), var(--darkPink-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profileImg {
-    max-height: 450px;
-    border-radius: 20px;
+    color: var(--black-color);
 }
 
 
@@ -338,8 +317,8 @@ input:checked+.slider:before {
     padding: 100px 0px 50px;
     /* background-color: var(--primary-bg); */
     color: var(--black-color);
-    /* background-image: url(./svg2.svg); */
-    background-repeat: no-repeat;
+    background-image: url(./svg2.svg);
+    background-repeat: no-repeat; 
     background-position: top left;
 
 }
@@ -358,7 +337,6 @@ input:checked+.slider:before {
     background-color: var(--primary-color);
     border-radius: 100px;
     border: none;
-    font-size: 14px;
 }
 
 .whatsapp,
@@ -366,27 +344,18 @@ input:checked+.slider:before {
 .linkedIn {
     width: 50px;
     height: 50px;
-    /* background-color: var(--darkBlue-color); */
-    background-color: #dfdff0;
+    /* background-color: var(--secondary-bg); */
     color: var(--black-color);
     font-size: 30px;
     border-radius: 50%;
     border: none;
-    display: inline-block;
-    padding: 0px 6px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-color: #e56ef6; */
 }
-
 .whatsapp img,
 .gitBtn img,
-.linkedIn img {
+.linkedIn img{
     width: 40px;
     height: 40px;
-    margin: auto;
-    /* padding: 10px; */
+    padding: ;
     /* background-color: var(--secondary-bg); */
     /* color: var(--black-color);
     font-size: 30px;
@@ -505,22 +474,6 @@ h2 {
     /* background-color: var(--primary-bg) !important; */
     box-shadow: inset 0.5px 0.5px 10px var(--white-color);
     border: none;
-}
-
-/* .navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    color: rgb(255 0 0);
-} */
-
-/* 
-.nav-link.active {
-    color: var(--lavender-color) !important;
-
-} */
-
-nav .nav-link {
-    color: var(--secondary-color) !important;
-
 }
 
 .nav-link {
@@ -774,9 +727,9 @@ textarea::placeholder {
 input::placeholder {
     color: #49243E;
 }
-
-h1 {}
-
+h1{
+    
+}
 footer h2 {
     color: var(--black-color);
 }
@@ -799,13 +752,11 @@ footer {
     text-align: center;
 
 }
-
-.devName {
+.devName{
     color: var(--darkPink-color);
     font-weight: 600;
 }
-
-.footerBase p {
+.footerBase p{
     font-weight: 600;
     color: var(--fadedBlack-color);
     font-size: 14px;
@@ -879,8 +830,8 @@ input:focus-visible {
     padding: 10px;
 }
 
-.introSecRight {
-    /* background-image: url(svg1.svg); */
+.introSecRight{
+    background-image: url(svg1.svg);
     /* background-image: url(svg4.svg); */
     /* background-image: url(svg1.svg); */
     border-radius: 50px;
@@ -894,9 +845,8 @@ input:focus-visible {
     /* background-position: top right; */
     background-size: cover;
     /* border: 2px solid red; */
-
+             
 }
-
 .aboutUsRight,
 .introSecleft,
 .careerLeftSec,
@@ -1068,6 +1018,17 @@ input:focus-visible {
 }
 
 @media only screen and (max-width:992px) {
+    .bannerSection1 {
+
+
+        background-image: url(./svg2.svg);
+        background-repeat: no-repeat; 
+        background-position: bottom right;
+        /* transform: rotate(180deg); */
+    
+    }
+
+    
     h1 {
         font-size: 54px;
     }
