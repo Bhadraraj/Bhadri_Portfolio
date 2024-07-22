@@ -187,11 +187,25 @@
                 </span>
 
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <button class="menu navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded',
+                    this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="30" height="30" viewBox="0 0 70 75">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
                 </button>
+
+
+
+
+
+
             </span>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -199,7 +213,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">ABOUT ME</a>
+                        <a class="nav-link active" aria-current="page" href="#aboutUsSection">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">SKILLS</a>
@@ -290,16 +304,46 @@
                         <div class="row pt-4">
 
                             <div class="col-lg-4 col-md-5  col-sm-5 col-xs-6 px-0 text-center ">
-                                <button class="downloadResume">DOWNLOAD RESUME</button>
+
+
+                                <!-- <a href="./Resume.pdf" download="Resume.pdf">
+                                    <button class="downloadResume">DOWNLOAD RESUME</button>
+                                </a> -->
+
+                                <a href="./Resume.pdf" download="Resume.pdf">
+                                    <button class="downloadResume">DOWNLOAD RESUME</button>
+                                </a>
+
+
+
                             </div>
                             <div
                                 class=" col-lg-8 col-md-7 col-sm-7 col-xs-6 text-sm-start mt-sm-0 mt-3 text-center px-0">
-                                <button class="whatsapp ms-md-4 ms-2"> <img src="./assests/img/icons8-git-256 (1).png"
-                                        alt="" class="img-fluid"></button>
-                                <button class="gitBtn  ms-md-4 ms-2"><img src="./assests/img/icons8-linkedin-240.png"
-                                        alt="" class="img-fluid"></button>
-                                <button class="linkedIn  ms-md-4 ms-2"><img src="./assests/img/icons8-whatsapp-240.png"
-                                        alt="" class="img-fluid"></button>
+
+
+                                <a href="https://github.com/Bhadraraj" target="_blank">
+                                    <button class="whatsapp ms-md-4 ms-2"> <img src="./assests/img/gitIcon.png" alt=""
+                                            class="img-fluid"></button>
+                                </a>
+
+
+                                <a href="https://www.linkedin.com/in/bhadra-raj-r" target="_blank">
+
+
+                                    <button class="gitBtn  ms-md-4 ms-2"><img src="./assests/img/linkedInIcon.png"
+                                            alt="" class="img-fluid"></button>
+
+                                </a>
+
+
+                                <a href="https://api.whatsapp.com/send?phone=7449143583&text=Hello%2C%20I%20am%20interested%20in%20your%20portfolio"
+                                    class="whatsapp-icon" target="_blank">
+
+                                    <button class="linkedIn  ms-md-4 ms-2"><img src="./assests/img/whatsappIcon.png"
+                                            alt="" class="img-fluid"></button>
+                                </a>
+
+
                             </div>
 
                         </div>
@@ -323,7 +367,7 @@
                 <div class="col-md-5 d-flex align-items-center justify-content-center">
                     <div class="aboutUsleft">
 
-<img src="./assests/img/aboutMeImg.png" alt="" class="img-fluid">
+                        <img src="./assests/img/aboutMeImg.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -381,6 +425,9 @@
                             <img src="./assests/img/skillsBadge/react.png" alt="" class="img-fluid">
                         </div>
                         <div class="skillbadge">
+                            <img src="./assests/img/skillsBadge/angular.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="skillbadge">
                             <img src="./assests/img/skillsBadge/redux.png" alt="" class="img-fluid">
                         </div>
                         <div class="skillbadge">
@@ -391,11 +438,15 @@
                             <img src="./assests/img/skillsBadge/mysql.png" alt="" class="img-fluid">
                         </div>
                         <div class="skillbadge">
+                            <img src="./assests/img/skillsBadge/JSON.jpeg" alt="" class="img-fluid">
+                        </div>
+                        <div class="skillbadge">
                             <img src="./assests/img/skillsBadge/git.png" alt="" class="img-fluid">
                         </div>
                         <div class="skillbadge">
                             <img src="./assests/img/skillsBadge/visual-studio-code.png" alt="" class="img-fluid">
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -451,9 +502,20 @@
                                             </span>
 
                                             <div class="trackCard ">
-                                                <h3 class="mb-1">B.E - Electronic and Communication Engineering</h3>
-                                                <p class="institute mb-0">Stella Mary’s College of Engineering</p>
-                                                <p class="duractionYr mb-0">2018-2022</p>
+                                                <p class="trackCareerTitle">Freelance Front End Developer </p>
+
+                                                <ul class="mb-0">
+                                                    <li>
+                                                        Crafted user-friendly interfaces using HTML, CSS, JavaScript,
+                                                        React, and Angular as a Freelance Front End Developer.
+                                                    </li>
+                                                    <li>Collaborated closely with clients to understand and fulfill
+                                                        project requirements effectively.
+                                                    </li>
+                                                </ul>
+
+
+                                                <p class="duractionYr mb-0 text-end">JAN 2022 - DEC 2022</p>
 
                                             </div>
                                         </div>
@@ -468,16 +530,33 @@
                                             </span>
 
                                             <div class="trackCard ">
-                                                <h3 class="mb-1">Higher Secondary School Education </h3>
-                                                <p class="institute mb-0">Hacker Memorial Higher Secondary School
+                                                <p class="trackCareerTitle">Front End Developer - Gift Web Solution,
+                                                    Nagercoil</p>
+
+                                                <ul class="mb-0">
+                                                    <li>
+                                                        Developed user-friendly admin and seller panels with Angular and
+                                                        TypeScript.
+                                                    </li>
+                                                    <li> Worked with design and backend teams for seamless integration.
+                                                    </li>
+
+                                                    <li> Implemented responsive designs to enhance user experience.</li>
+                                                </ul>
+
+
+
+
+
                                                 </p>
-                                                <p class="duractionYr mb-0">2017-2018</p>
+                                                <p class="duractionYr mb-0">Dec 2022 - April 2024</p>
 
                                             </div>
                                         </div>
 
-
                                         <div class="trackcard-main d-flex mt-3">
+
+
                                             <span class="trackCardIcon">
                                                 <ion-icon name="caret-forward-circle-outline"
                                                     class="rightIcon"></ion-icon>
@@ -485,23 +564,29 @@
                                             </span>
 
                                             <div class="trackCard ">
-                                                <h3 class="mb-1">Secondary School Education </h3>
-                                                <p class="institute mb-0">Hacker Memorial Higher Secondary School
+
+                                                <p class="trackCareerTitle">Full Stack Web Development Trainer - Image
+                                                    Creative Education</p>
+
+                                                <ul class="mb-0">
+                                                    <li>
+                                                        Conducted training sessions covering HTML, CSS, JavaScript,
+                                                        React.js, Redux.js, Axios, PHP, MySQL, WordPress, Git, GitHub,
+                                                        etc.
+                                                    </li>
+
+
+                                                    <li>Guided over 100+ students to ensure a deep understanding of
+                                                        frontend and backend development.</li>
+                                                </ul>
                                                 </p>
-                                                <p class="duractionYr mb-0">2015-2016</p>
+                                                <p class="duractionYr mb-0">May 2023 - Till Now</p>
 
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
-
-
                             </div>
-
-
-
                         </div>
 
                     </div>
@@ -521,9 +606,9 @@
                                         style="max-height: 400px;">
                                     <!-- </div> -->
                                 </div>
-                                <div class="col-lg-8 ">
+                                <div class="col-lg-8 eduCardMain ">
                                     <!-- <div class="careerLeftSec"> -->
-                                    <div class="trackcard-main d-flex ">
+                                    <div class="trackcard-main d-flex  ">
 
 
                                         <span class="trackCardIcon">
@@ -532,8 +617,12 @@
                                         </span>
 
                                         <div class="trackCard ">
-                                            <h3 class="mb-1">B.E - Electronic and Communication Engineering</h3>
-                                            <p class="institute mb-0">Stella Mary’s College of Engineering</p>
+                                            <p class="trackCareerTitle">B.E - Electronic and Communication Engineering
+                                            </p>
+                                            <ul class="mb-0">
+                                                <li>Stella Mary’s College of Engineering</li>
+                                            </ul>
+
                                             <p class="duractionYr mb-0">2018-2022</p>
 
                                         </div>
@@ -548,9 +637,13 @@
                                         </span>
 
                                         <div class="trackCard ">
-                                            <h3 class="mb-1">Higher Secondary School Education </h3>
-                                            <p class="institute mb-0">Hacker Memorial Higher Secondary School
-                                            </p>
+                                            <p class="trackCareerTitle">Higher Secondary School Education </p>
+
+                                            <ul class="mb-0">
+                                                <li>Hacker Memorial Higher Secondary School</li>
+                                            </ul>
+
+
                                             <p class="duractionYr mb-0">2017-2018</p>
 
                                         </div>
@@ -564,9 +657,12 @@
                                         </span>
 
                                         <div class="trackCard ">
-                                            <h3 class="mb-1">Secondary School Education </h3>
-                                            <p class="institute mb-0">Hacker Memorial Higher Secondary School
-                                            </p>
+                                            <p class="trackCareerTitle">Secondary School Education </p>
+                                            <ul class="mb-0">
+                                                <li>Hacker Memorial Higher Secondary School</li>
+                                            </ul>
+                                            <!-- <p class="institute mb-0">
+                                            </p> -->
                                             <p class="duractionYr mb-0">2015-2016</p>
 
                                         </div>
@@ -605,9 +701,6 @@
 
             </p>
             <div class="row g-4">
-
-
-
                 <div class="col-xl-3 col-md-4 col-sm-6 ">
                     <div class="projectOuterCard">
                         <div class="projectcard">
@@ -617,11 +710,20 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">
-                                            <a href="https://bhadraraj.github.io/hsb-foods">
-                                                <img src="./assests/img/live-gif.gif" alt="">
-                                            </a>
-                                        </p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/hsb-foods" class="">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+
+                                                <a href="https://bhadraraj.github.io/hsb-foods" class="">
+                                                    <span class="liveTxt">
+                                                        Live
+                                                    </span> </a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -634,7 +736,7 @@
                                         Resturant Website
                                     </p>
                                     <p class="exploreFurther  mb-0">
-                                        <a href="https://bhadraraj.github.io/hsb-foods/" target="_blank">
+                                        <a href="https://bhadraraj.github.io/hsb-foods" target="_blank">
                                             Click here to Explore Further..
                                         </a>
                                     </p>
@@ -652,9 +754,27 @@
                             </div>
                             <div class="projectContent">
                                 <div class="row">
+
+
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/adidas_landing_page" class="">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/adidas_landing_page" class="">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span> </a>
+                                        </div>
+
                                     </div>
+
+
+
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
                                         <img src="./assests/img/htmlTag.svg" class="ms-2" height="15px">
@@ -663,7 +783,7 @@
                                 </div>
                                 <div class="row">
                                     <p class="projectTitle mb-0">
-                                        Adidas Landing Page
+                                        Landing Page
                                     </p>
                                     <p class="exploreFurther  mb-0">
                                         <a href="https://bhadraraj.github.io/adidas_landing_page">
@@ -685,7 +805,21 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/toggle_card" class="">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/toggle_card" class="">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -718,12 +852,22 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">
-                                            <a href="https://bhadraraj.github.io/qatar-webpage/">
-                                                <img src="./assests/img/live-gif.gif" alt="">
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/qatar-webpage" target="_blank">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
                                             </a>
-                                        </p>
+                                            <a href="https://bhadraraj.github.io/qatar-webpage" target="_blank">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span></a>
+                                        </div>
+
                                     </div>
+
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
                                         <img src="./assests/img/htmlTag.svg" class="ms-2" height="15px">
@@ -732,10 +876,10 @@
                                 </div>
                                 <div class="row">
                                     <p class="projectTitle mb-0">
-                                        Resturant Website
+                                        Qatar Webpage
                                     </p>
                                     <p class="exploreFurther  mb-0">
-                                        <a href="https://bhadraraj.github.io/qatar-webpage/" target="_blank">
+                                        <a href="https://bhadraraj.github.io/qatar-webpage" target="_blank">
                                             Click here to Explore Further..
                                         </a>
                                     </p>
@@ -752,17 +896,28 @@
                     <div class="projectOuterCard">
                         <div class="projectcard">
                             <div class="projectImg">
-                                <img src="./assests/img/carReltal.png  " alt="" class="img-fluid">
+                                <img src="./assests/img/carRental.png" alt="" class="img-fluid">
                             </div>
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">
-                                            <a href="https://bhadraraj.github.io/car_rental">
-                                                <img src="./assests/img/live-gif.gif" alt="">
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/car_rental" target="_blank">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
                                             </a>
-                                        </p>
+                                            <a href="https://bhadraraj.github.io/car_rental" target="_blank">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
+
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
                                         <img src="./assests/img/htmlTag.svg" class="ms-2" height="15px">
@@ -771,7 +926,7 @@
                                 </div>
                                 <div class="row">
                                     <p class="projectTitle mb-0">
-                                        Resturant Website
+                                        Car Rental
                                     </p>
                                     <p class="exploreFurther  mb-0">
                                         <a href="https://bhadraraj.github.io/car_rental" target="_blank">
@@ -797,8 +952,23 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/tesla-clone">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/tesla-clone">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
+
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
                                         <img src="./assests/img/htmlTag.svg" class="ms-2" height="15px">
@@ -829,7 +999,20 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+
+                                            <a href="https://bhadraraj.github.io/RTO-number-checker">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a> <a href="https://bhadraraj.github.io/RTO-number-checker">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span></a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -861,7 +1044,21 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/calculator">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/calculator">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -895,7 +1092,21 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/analog_clock">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/analog_clock">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -927,7 +1138,19 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/signin-form">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a> <a href="https://bhadraraj.github.io/signin-form">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span></a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -959,7 +1182,21 @@
                             <div class="projectContent">
                                 <div class="row">
                                     <div class="col-6 text-start">
-                                        <p class="liveTxt mb-0 ">Live</p>
+
+                                        <div class=" mb-0 liveCont">
+                                            <a href="https://bhadraraj.github.io/hotel-website">
+                                                <span class="Live">
+                                                    <span class="circle"></span>
+                                                </span>
+
+                                            </a>
+                                            <a href="https://bhadraraj.github.io/hotel-website">
+                                                <span class="liveTxt">
+                                                    Live
+                                                </span>
+                                            </a>
+                                        </div>
+
                                     </div>
                                     <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img src="./assests/img/figmaLogo.png" alt="" height="15px">
@@ -1383,67 +1620,13 @@
 
 
             <div class="row  mt-4">
-                <!-- 
-                <div class="col-md-4 order-md-2 d-flex justify-content-center align-items-center">
-                    <div class="connectMeLeftSec"> -->
-                <!-- <div class="card">
-                            <div class="row">
-                                <div class="col-12">
-                                    <span class="phone"><ion-icon name="call-outline"></ion-icon>
-                                        +91 7449143583
-                                    </span>
-                                </div>
-                                <br>
-                                <br>                              
-                          
-                                <div class="col-12">
-                                    <span class="email"><ion-icon name="call-outline"></ion-icon>
-                                        20bhadri2001@gmail.com
-                                    </span>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="col-12">
-                                    <span class="phone"><ion-icon name="call-outline"></ion-icon>
-                                        Nagercoil, Tamil Nadu, India
-                                    </span>
-                                </div>
-                                <br>      <br>
-
-
-                            </div>
-
-                        </div> -->
-
-
-                <!-- </div>
-                </div> -->
-
-
-
-                <div class="col-lg-6">
-                    <div class="connectMeLeftSec">
-                        <!-- <h2>Contact Me</h2> -->
-                        <p>I'm always open to discussing new projects, creative ideas, and opportunities. Feel free to
-                            reach out!</p>
-                        <ul class="contact-details">
-                            <li><strong>Email : </strong> 20bhadri2001@gmail.com</li>
-                            <li><strong>Phone : </strong> +91-7449143583</li>
-                            <li><strong>Address : </strong> 123 Your Street, City, Country</li>
-                        </ul>
-                        <p><b>Follow me on social media:</b></p>
-                        <ul class="social-links">
-                            <li><a href="https://www.linkedin.com/in/bhadra-raj-r" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/Bhadraraj" target="_blank">GitHub</a></li>
-
-                        </ul>
-                    </div>
-                </div>
 
 
 
 
-                <div class="col-lg-6 order-md-1">
+
+
+                <div class="col-lg-7 order-md-1">
                     <div class="connectMeRightSec">
 
                         <div class="row  g-3 mb-3">
@@ -1479,28 +1662,57 @@
 
                     </div>
                 </div>
+                <div class="col-lg-5 order-lg-1">
+                    <div class="connectMeLeftSec">
+
+
+                        <ul class="contact-details">
+                            <li><strong>Email : </strong> 20bhadri2001@gmail.com</li>
+                            <li><strong>Phone : </strong> +91-7449143583</li>
+                            <li><strong>Address : </strong> 123 Your Street, City, Country</li>
+                        </ul>
+                        <p><b>Follow me on social media:</b></p>
+                        <ul class="social-links">
+                            <li><a href="https://www.linkedin.com/in/bhadra-raj-r" target="_blank">
+                                    <!-- <img src="./icons8-linkedin-240 (1).png" alt="" > -->
+                                    <img src="./icons8-linkedin-circled-240 (1).png" alt="">
+                                </a></li>
+                            <li><a href="https://github.com/Bhadraraj" target="_blank">
+
+                                    <img src="./icons8-git-250 (1).png" alt="">
+
+                                </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
 
             </div>
 
             <hr>
             <div class="footerBase">
-                <div class="row">
-                    <div class="col-sm-3 col-6 text-center">
-                        <a href="Home">Home</a>
-                    </div>
-                    <div class="col-sm-3 col-6 text-center">
-                        <a href="Home">About</a>
-                    </div>
-                    <div class="col-sm-3 col-6 text-center">
-                        <a href="Home">Project</a>
-                    </div>
-                    <div class="col-sm-3 col-6 text-center">
-                        <a href="Home">Contact</a>
-                    </div>
-                    <div class="col-12  mt-3">
-                        <p class="mb-0 text-end"> Designed and Developed by <span class="devName">Bhadri</span> </p>
-                    </div>
+                <div class="container">
 
+                    <div class="row">
+                        <div class="col-sm-3 col-6 text-center">
+                            <a href="Home">Home</a>
+                        </div>
+                        <div class="col-sm-3 col-6 text-center">
+                            <a href="Home">About</a>
+                        </div>
+                        <div class="col-sm-3 col-6 text-center">
+                            <a href="Home">Project</a>
+                        </div>
+                        <div class="col-sm-3 col-6 text-center">
+                            <a href="Home">Contact</a>
+                        </div>
+
+                        <div class="col-12  mt-3 px-2">
+                            <p class="mb-0 text-end"> Designed and Developed by <span class="devName">Bhadri</span> </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
     </footer>
@@ -1550,8 +1762,8 @@
 
     <script src="script.js"></script>
     <script src="./swipperTestimonial.js"></script>
-    <!-- <script src="./swipper.js"></script> -->
-    <!-- <script src="./testimonialCarosole.js"></script> -->
+    <script src="./swipper.js"></script>
+    <script src="./testimonialCarosole.js"></script>
 
 </body>
 

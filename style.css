@@ -27,7 +27,7 @@
 
     /* skillbagde
      */
-    --lavender-color:#7a77d6;
+    --lavender-color: #7a77d6;
     --lightBlue-color: #d4edff;
     --darkBlue-color: #d4edff;
     --fade-color: #dfdff0;
@@ -48,10 +48,17 @@
     --font-size-18: 18px;
     --font-size-20: 20px;
     --font-size-24: 24px;
+    --font-monstrat: 'Montserrat', sans-serif;
+    --font-Yatra: "Yatra One", system-ui;
+    --font-Playfair: 'Playfair Display', serif !important;
 
 }
 
-h1,h2, h4,h5,h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
     font-size: 60px;
     /* font-family: 'Playfair Display', serif !important; */
     font-family: "Yatra One", system-ui !important;
@@ -80,7 +87,8 @@ h3 {
 
 .navbar a {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 13px;
     text-decoration: none;
 
 }
@@ -101,9 +109,10 @@ h3 {
     padding: 8px 20px;
     border: none;
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 500;
-    background-color: var(--primary-bg);
+    background-color: var(--lavender-color);
+    color: #d4edff;
 
 }
 
@@ -114,11 +123,18 @@ h3 {
     box-shadow: 0 0 0 var(--primary-bg) !important;
 }
 
+.nav-link.active {
+    color: #e56ef6;
+}
 
+.navbar-brand {
+    font-size: 20px !important;
+}
 
 .hireMe a,
 .hireMeinsideNav a {
-    color: var(--black-color);
+    color: var(--white-color);
+    font-size: 12px;
 }
 
 
@@ -145,6 +161,58 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+.menu {
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* display: flex; */
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 90 207;
+    stroke-width: 4;
+}
+
+.line2 {
+    stroke-dasharray: 40 40;
+    stroke-width: 4;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 4;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 4;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 4s;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
 }
 
 
@@ -318,7 +386,7 @@ input:checked+.slider:before {
     /* background-color: var(--primary-bg); */
     color: var(--black-color);
     background-image: url(./svg2.svg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: top left;
 
 }
@@ -330,9 +398,14 @@ input:checked+.slider:before {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .downloadResume {
-    padding: 15px;
+    padding: 12px;
     font-weight: 700;
+    font-size: 12px;
     color: var(--white-color);
     background-color: var(--primary-color);
     border-radius: 100px;
@@ -350,17 +423,25 @@ input:checked+.slider:before {
     border-radius: 50%;
     border: none;
 }
+
 .whatsapp img,
 .gitBtn img,
-.linkedIn img{
-    width: 40px;
-    height: 40px;
-    padding: ;
+.linkedIn img {
+    /* width: 40px; */
+    /* height: 40px; */
+    padding: 10px;
     /* background-color: var(--secondary-bg); */
     /* color: var(--black-color);
     font-size: 30px;
     border-radius: 50%;
     border: none; */
+}
+
+.duractionYr {
+    color: var(--lavender-color) !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: end;
 }
 
 .introSec {
@@ -455,6 +536,9 @@ h2 {
 
 }
 
+.eduCardMain li {
+    /* list-style-type: none !important; */
+}
 
 .nav-tabs .nav-link {
 
@@ -558,8 +642,28 @@ h2 {
 
 .trackCard p {
     color: var(--fadedBlack-color);
-    font-weight: 500;
+    /* font-weight: 500; */
 }
+
+.trackCard li {
+    color: var(--fadedBlack-color);
+    list-style-type: square;
+
+    /* font-weight: 500; */
+}
+
+.trackCard li {
+    color: var(--fadedBlack-color);
+    font-size: 15px;
+    list-style-type: square;
+}
+
+.trackCard li::marker {
+    color: var(--darkPink-color);
+    /* Replace with your desired color */
+}
+
+
 
 /* -----------------------------------LEARNING AND CAREER TRACK ENDS HERE ------------------------------- */
 
@@ -568,7 +672,13 @@ h2 {
 /* -----------------------------------PROFESSIONAL SKILLS HERE ------------------------------- */
 
 
-
+.trackCareerTitle {
+    color: var(--primary-color) !important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Yatra One", system-ui !important;
+    margin-bottom: 5px;
+}
 
 .skill-container {
     max-width: 600px;
@@ -643,8 +753,12 @@ h2 {
 }
 
 .projectTitle {
-    font-size: var(--font-size-20);
-    color: var(--lightBlack);
+    /* font-size: var(--font-size-20); */
+    font-size: 13px;
+
+    color: var(--primary-color) !important;
+    /* font-family: var(--font-Yatra) !important; */
+    font-family: var(--font-monstrat) !important;
     font-weight: 600;
 }
 
@@ -669,9 +783,21 @@ h2 {
 
 }
 
+.liveCont{
+    width: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    /* background-color: #8290AB; */
+}
+.liveTxt {
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+}
 
-.liveTxt img {
-    height: 20px;
+.liveTxt a {
+    color: var(--lavender-color);
 }
 
 .projectcard {
@@ -694,6 +820,77 @@ h2 {
 
 }
 
+
+/* LIVE ICON ANIMATION */
+.Live {
+    height: 5px;
+    width: ;
+    /* background-color: blanchedalmond; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Live .circle {
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translateX(-50%) translateY(-50%); */
+    width: 5px;
+    height: 5px;
+}
+
+.Live .circle:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 150%;
+    height: 150%;
+    box-sizing: border-box;
+    /* margin-left: -75%;
+    margin-top: -75%; */
+    top: -2px;
+    border-radius: 45px;
+    background-color: red;
+    animation: pulse 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.Live .circle:after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50px;
+    animation: circle 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+
+
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* LIVE ICON ANIMATION */
 
 
 .projectGallerySection {
@@ -727,9 +924,9 @@ textarea::placeholder {
 input::placeholder {
     color: #49243E;
 }
-h1{
-    
-}
+
+h1 {}
+
 footer h2 {
     color: var(--black-color);
 }
@@ -752,15 +949,42 @@ footer {
     text-align: center;
 
 }
-.devName{
+
+.social-links img {
+    width: 100%;
+    padding: 8px;
+    /* height: 50px; */
+}
+
+.social-links img {
+    transition: 1.3s;
+}
+
+.social-links img:hover {
+    transform: rotate(360deg);
+    transition: 1.3s;
+}
+
+.social-links li {
+    height: 40px;
+    width: 40px;
+    background-color: #efecff;
+
+    border-radius: 50%;
+    ;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.devName {
     color: var(--darkPink-color);
     font-weight: 600;
 }
-.footerBase p{
-    font-weight: 600;
+
+.footerBase p {
     color: var(--fadedBlack-color);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .contact-details li {
@@ -830,7 +1054,7 @@ input:focus-visible {
     padding: 10px;
 }
 
-.introSecRight{
+.introSecRight {
     background-image: url(svg1.svg);
     /* background-image: url(svg4.svg); */
     /* background-image: url(svg1.svg); */
@@ -845,8 +1069,9 @@ input:focus-visible {
     /* background-position: top right; */
     background-size: cover;
     /* border: 2px solid red; */
-             
+
 }
+
 .aboutUsRight,
 .introSecleft,
 .careerLeftSec,
@@ -859,7 +1084,7 @@ input:focus-visible {
 .testimonial,
 .connectMeRightSec,
 .connectMeLeftSec {
-    display: none;
+    /* display: none; */
 }
 
 .animate-right {
@@ -928,9 +1153,9 @@ input:focus-visible {
 }
 
 .projectOuterCard {
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 10px;
-    bo
+    /* bo/ */
 }
 
 
@@ -1022,13 +1247,13 @@ input:focus-visible {
 
 
         background-image: url(./svg2.svg);
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         background-position: bottom right;
         /* transform: rotate(180deg); */
-    
+
     }
 
-    
+
     h1 {
         font-size: 54px;
     }
@@ -1039,6 +1264,10 @@ input:focus-visible {
 
     h3 {
         font-size: 22px;
+    }
+
+    .navbar li {
+        padding: 0px;
     }
 
 }
