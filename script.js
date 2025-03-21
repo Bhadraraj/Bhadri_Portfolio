@@ -93,8 +93,8 @@ function handleScroll() {
     if (scrollPosition >= targetHeight) {
 
 
-        document.querySelector('.careerLeftSec').classList.add('animate-left');
-        document.querySelector('.careerRightSec').classList.add('animate-right');
+        // document.querySelector('.careerLeftSec').classList.add('animate-left');
+        // document.querySelector('.careerRightSec').classList.add('animate-right');
         document.querySelector('.skillsLeftSec').classList.add('animate-left');
         document.querySelector('.skillsRightSec').classList.add('animate-right');
         document.querySelector('.projectGallerySection').classList.add('animate-right');
